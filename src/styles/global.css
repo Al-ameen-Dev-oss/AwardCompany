@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary: #0b2a4a;
+  --primary-dark: #061a2e;
+  --accent: #16a34a;
+
+  --white: #ffffff;
+  --light: #f5f7fa;
+
+  --text: #475569;
+  --text-dark: #172033;
+
+  --border: #e2e8f0;
+
+  --shadow: rgba(6, 26, 46, 0.12);
+}
+
+[data-theme="dark"] {
+  --primary: #4ade80;
+  --primary-dark: #020b14;
+  --accent: #22c55e;
+
+  --white: #07131f;
+  --light: #0d1d2c;
+
+  --text: #a8b5c5;
+  --text-dark: #f1f5f9;
+
+  --border: #243447;
+
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+
+  font-family: "Inter", sans-serif;
+
+  background: var(--white);
+  color: var(--text-dark);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* =========================
+   ROOT
+========================= */
+
+#root {
+  min-height: 100vh;
+
+  background: var(--white);
+  color: var(--text-dark);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* =========================
+   GLOBAL ELEMENTS
+========================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   PAGE THEME
+========================= */
+
+main {
+  min-height: 100vh;
+
+  background: var(--white);
+  color: var(--text-dark);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
